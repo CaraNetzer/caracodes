@@ -1,0 +1,22 @@
+# About Me/Intro to Blogging
+
+## Who am I?
+I am a junior software developer. I have been in the field for 2.5 years. I don't like the idea of having a public online presence, but there are still a lot of reasons I want to start this blog. Here are some of them, in no particular order.
+
+## Why am I blogging?
+I want to document things I’m mulling over and ways that I'm learning and growing over the course of my career. I have had many phases of learning and plateauing so far in my career, and it would be nice to be able to look back on those phases and internalize my progress without solely relying on my memory (a concept that is very topical to my next blog post - stay tuned).
+
+I've always wanted to find a way to marry creativity and tech. I want to develop my literary voice. I want to prepare to make a career change if it ever comes to that. I’ve heard that some of the best technical writers are former software developers.
+
+Most tech blogs I read are from junior devs or other industry professionals working at fortune 500 companies, tech startups, or otherwise large, well established private-sector companies. As someone working in the government/not for profit/public sector, I want to provide a different perspective.
+
+## What makes the public sector different from the private sector?
+My workplace feels different enough that when I'm reading a book, article, or documentation of a new framework or feature of a tool we use, it seems aimed at a completely different audience. The default seems to be large development teams that build solutions used by thousands or millions of users. From my experience in a small organization, speed and profit are not prominent factors in most of our work. If something breaks, it is our job to fix it and prevent it from happening in the future, but we’re not losing money for every moment a service is down.
+
+## What to expect from CaraCodes:
+I like bulleted lists. I like using parentheses. I sometimes use words that are bigger than they need to be. I tend towards writing really wordy sentences (but I'm working on it!). Some of the things I write about will betray my juniority, but others I hope will offer insight to other junior developers in similar positions.
+
+Given that this is a blog for my profession, most posts will be more formal in tone, but some will be more casual (like this one).
+
+I've encountered posts from junior developers who are starting at organizations with legacy code bases who write about their frustrations in their attempts to change things to be more in line with industry best practices. These efforts, unsurprisingly, are often met with disdain from coworkers. I hope to avoid that energy in my workplace, but also here in this blog. I intend to talk about what works and doesn't need changing, in addition to areas that could use some updates and why. Tech startups on the cutting edge of innovation are cool and all, but legacy systems are also rich texts. I hope that I can add to that conversation.
+
