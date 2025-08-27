@@ -15,7 +15,7 @@ try:
           text = f.read()
           html = markdown.markdown(text, extensions=['attr_list'])
 
-      with open(f"{filename}.html", 'w') as f:
+      with open(f"../html/{filename}.html", 'w') as f:
           f.write(html)
 
 except OSError as e:

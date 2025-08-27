@@ -1,0 +1,66 @@
+html {
+  background-color: rgb(232, 239, 231);
+}
+
+body {
+  width: 65%;
+  margin: auto;
+  font-family: Lucida Console, Monospace;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav"
+    "right main main left"
+    "foot foot foot foot";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+}
+
+#grid-container * {
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.nav button {
+  color: white;
+  background: none;
+  border: none;
+}
+
+.nav button:hover {
+  color: blue;
+}
+
+#left {
+  grid-area: left;
+  background-color: lightgreen;
+}
+
+#right {
+  grid-area: right;
+  background-color: lightgreen;
+}
+
+.main-content {
+  grid-area: main;
+  background-color: lightgreen;
+}
+
+#foot {
+  grid-area: foot;
+  background-color: lightgreen;
+  margin-bottom: 1rem;
+}
