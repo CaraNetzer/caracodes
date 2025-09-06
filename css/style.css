@@ -5,62 +5,78 @@ html {
 body {
   width: 65%;
   margin: auto;
-  font-family: Lucida Console, Monospace;
+  font-family: 'Space Mono';
 }
 
 #grid-container {
   display: grid;
   grid-template-areas:
-    "nav nav nav nav"
-    "right main main left"
-    "foot foot foot foot";
-  grid-template-columns: repeat(4, 1fr);
+    "nav"
+    "main"
+    "foot";
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, auto);
   gap: 10px;
 }
 
 #grid-container * {
   border-radius: 10px;
-  padding: 15px;
 }
 
 .nav {
   grid-area: nav;
-  background-color: lightgreen;
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
   gap: 1rem;
   font-weight: bold;
+  align-items: center;
+}
+ .nav * {
+  padding: 1rem;
+ }
+
+ .nav,
+ .nav li h1,
+ .nav li {
+  padding-left: 0 !important;
+ }
+
+.nav li {
+  list-style: none;
+}
+.nav li a {
+  color: black;
+  text-decoration: none;
 }
 
-.nav button {
-  color: white;
-  background: none;
-  border: none;
-}
-
-.nav button:hover {
-  color: blue;
+.nav li a:hover {
+  color: darkgreen;
+  background-color: white;
 }
 
 #left {
   grid-area: left;
-  background-color: lightgreen;
 }
 
 #right {
   grid-area: right;
-  background-color: lightgreen;
 }
 
-.main-content {
+#main-content {
   grid-area: main;
-  background-color: lightgreen;
 }
 
 #foot {
   grid-area: foot;
-  background-color: lightgreen;
   margin-bottom: 1rem;
+}
+
+table {
+  display: table;
+  border-spacing: 1rem;
+}
+td {
+  border: 1px solid;
+  padding: 1rem;
 }
