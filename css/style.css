@@ -37,8 +37,9 @@ body {
  }
 
  .nav,
+ .nav li,
  .nav li h1,
- .nav li {
+ .nav li h1 a {
   padding-left: 0 !important;
  }
 
@@ -50,9 +51,12 @@ body {
   text-decoration: none;
 }
 
-.nav li a:hover {
+.nav li a:hover:not(#home) {
   color: darkgreen;
   background-color: white;
+}
+#home:hover {
+  text-decoration: underline;
 }
 
 #left {
@@ -76,7 +80,51 @@ table {
   display: table;
   border-spacing: 1rem;
 }
+
 td {
   border: 1px solid;
   padding: 1rem;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-areas:
+    "project1 project2"
+    "project3 .";
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.project {
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.project1 {
+  grid-area: project1;
+}
+.project2 {
+  grid-area: project2;
+}
+.project3 {
+  grid-area: project3;
+}
+
+.library {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.book img {
+  width: 100%;
+}
+
+.book {
+  width: 31%;
+  transition: transform .2s;
+}
+
+.book:hover {
+  transform: scale(1.05);
 }

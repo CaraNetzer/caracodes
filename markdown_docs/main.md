@@ -1,24 +1,27 @@
-Welcome.
+# Hi, my name is Cara. I love coding and am passionate about public sector web development.
 
-# About Me
+# Tech Stack
 
-I am a trained full-stack developer interested in quality assurance and game development. In college, I started out as an aspiring computer science major. Technical writing and problem solving was rewarding, but my focus ended up switching to sociology as I found it combined more of my passions. Post-grad, I began my career working in a public defender office to bolster avenues that add a social work lens to criminal defense teams. In that role I worked a lot with our agency's website and was reminded of all the things I loved about computer science. I now want to move into the tech field in order to come up with creative solutions to social problems, to bring people joy, and to make the world more accessible for more of us.
-
+- ASP.NET/C#
+- HTML/CSS/JS
+- Oracle PL/SQL
+- Python
+- Bash and Batch
 
 # Portfolio
 
 <div class="portfolio">
-  <div class="project">
+  <div class="project project1">
       <div style="font-weight:bold; text-align:center;">30 Second Farm<br>February 2023<br>
         <a href="https://www.youtube.com/watch?v=s5Cf9bQtLks&ab_channel=CaraNetzer"><img style="width:400px;" src="./30-Second-Farm-thumbnail.png" alt="30 Second Farm project thumbnail" ></a>
       </div>
     </div>
-  <div class="project">
+  <div class="project project2">
       <div style="font-weight:bold; text-align:center;">Sprite[0]<br>December 2022<br>
         <a href="https://www.youtube.com/watch?v=fN48v7ZmaWk&ab_channel=CaraNetzer"><img style="width:400px;" src="./Sprite%5B0%5D-thumbnail.png" alt="sprite[0] project thumbnail" ></a>
       </div>
     </div>
-  <div class="project">
+  <div class="project project3">
       <div style="font-weight:bold; text-align:center;">Podcast Recommender<br>August 2022<br>
         <a href="https://www.youtube.com/watch?v=1zLuU1YBDWY&ab_channel=CaraNetzer"><img style="width:400px;" src="./Podcast-Recommender-thumbnail.png" alt="podcast recomender project thumbnail" ></a>
       </div>
