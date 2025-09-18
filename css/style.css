@@ -184,6 +184,8 @@ td {
 
 svg {
   width: 5rem;
+  display: block;
+  margin: auto;
 }
 
 svg:hover {
@@ -192,6 +194,7 @@ svg:hover {
 
 .logo {
   position: relative;
+  width: fit-content;
 }
 
 #svg-logos {
@@ -200,17 +203,23 @@ svg:hover {
   justify-content: space-evenly;
 }
 
-svg+span {
-  display: none;
+.logo > span {
+  visibility: hidden;
+  width: 100%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  padding: 2px 4px;
+  margin-top: .5rem;
 }
 
-svg:hover + span {
+.logo:hover > span {
+  visibility: visible;
+  /*position: absolute;
   display: inline;
-  position: absolute;
   top: 30%;
-  left: 22%;
+  left: calc(50% - 25%);*/
   background-color: black;
   color: white;
   border-radius: 0px !important;
-  padding: 2px 4px;
 }

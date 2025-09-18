@@ -1,39 +1,61 @@
 from bs4 import BeautifulSoup
-import markdown, os
+import markdown, os, json
 
-def convert_md_to_html():
+def convert_md_to_html(folder, subfolder):
   try:
 
-    for file in os.listdir("markdown_docs"):
+    for file in os.listdir(folder):
 
       filename, ext = os.path.splitext(file)
 
       if ext == ".md":
-        with open(f"markdown_docs/{file}", 'r') as f:
+        with open(f"{folder}/{file}", 'r') as f:
             text = f.read()
             html = markdown.markdown(text, extensions=['attr_list'])
 
-        with open(f"html/{filename}.html", 'w') as f:
+        with open(f"html/{subfolder}/{filename}.html", 'w+') as f:
             f.write(html)
 
   except OSError as e:
       print(f"custom error: {e}")
 
-def build():
-  convert_md_to_html()
 
-  for body in os.listdir("html"):
+def build_blog_index():
 
-    with open("index.html", "r") as file:
-      html = BeautifulSoup(file, "html.parser")
-      main_content = html.find("div", id="main-content")
+  with open('posts.json', 'r') as file:
+    posts = json.load(file)
 
-      with open(f"html/{body}", "r") as inner_file:
-        inner_file_html = BeautifulSoup(inner_file, "html.parser")
-        main_content.insert(0, inner_file_html)
+  with open("html/blog.html", "w+") as blog_index:
+    for post in posts:
+      blog_index.write("<div class='post-card'>"
+        + f"<h3><a href='./blog/{post["file_name"]}'>{post["title"]}</a></h3>"
+        + f"<p>{post["date"]}</p>"
+        + f"<p>{post["tagline"]}</p>"
+        + "</div>")
 
-      with open(f"html/{body}", "w") as inner_file:
-        inner_file.write(str(html.prettify(formatter="minimal")))
 
-build()
+
+def build(folder):
+
+  for body in os.listdir(folder):
+
+    if not os.path.isdir(f"./{folder}/" + body):
+      with open("index.html", "r") as file:
+        html = BeautifulSoup(file, "html.parser")
+        main_content = html.find("div", id="main-content")
+
+        with open(f"{folder}/{body}", "r") as inner_file:
+          inner_file_html = BeautifulSoup(inner_file, "html.parser")
+          main_content.insert(0, inner_file_html)
+
+        with open(f"{folder}/{body}", "w") as inner_file:
+          inner_file.write(str(html.prettify(formatter="minimal")))
+
+
+
+convert_md_to_html("markdown_docs", ".")
+convert_md_to_html("blog_posts", "blog")
+build_blog_index()
+build("html")
+build("html/blog")
 
