@@ -1,5 +1,8 @@
 from bs4 import BeautifulSoup
-import markdown, os, json
+import markdown, os, json, sys
+
+cssroute = sys.argv[1]
+htmlroute = sys.argv[2]
 
 def convert_md_to_html(folder, subfolder):
   try:
@@ -29,7 +32,7 @@ def build_blog_index():
     for post in posts:
       blog_index.write("<div class='post-card'>"
         + f"<h3><a href='./blog/{post["file_name"]}'>{post["title"]}</a></h3>"
-        + f"<p>{post["date"]}</p>"
+        + f"<p>Date: {post["date"]}</p>"
         + f"<p>{post["tagline"]}</p>"
         + "</div>")
 
@@ -49,7 +52,9 @@ def build(folder):
           main_content.insert(0, inner_file_html)
 
         with open(f"{folder}/{body}", "w") as inner_file:
-          inner_file.write(str(html.prettify(formatter="minimal")))
+          html_str = str(html.prettify(formatter="minimal"))
+          html_str = html_str.replace("{cssroute}", cssroute).replace("{htmlroute}", htmlroute)
+          inner_file.write(html_str)
 
 
 

@@ -39,14 +39,14 @@
 
 
   <div class="logo">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="#C74634" d="M31.529 81.056C14.013 81.056 0 67.044 0 49.528s14.013-31.529 31.529-31.529H68.47c17.517 0 31.53 14.013 31.53 31.529S85.987 81.056 68.471 81.056zM67.516 69.91c11.465 0 20.382-9.236 20.382-20.382 0-11.465-9.236-20.382-20.382-20.382H32.484c-11.465 0-20.382 9.235-20.382 20.382 0 11.146 9.236 20.382 20.382 20.382z"/></svg>
-    <span>Oracle PL/SQL</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#F34F29" d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"/></svg>
+    <span>Git</span>
   </div>
 
 
   <div class="logo">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#F34F29" d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"/></svg>
-    <span>Git</span>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="#C74634" d="M31.529 81.056C14.013 81.056 0 67.044 0 49.528s14.013-31.529 31.529-31.529H68.47c17.517 0 31.53 14.013 31.53 31.529S85.987 81.056 68.471 81.056zM67.516 69.91c11.465 0 20.382-9.236 20.382-20.382 0-11.465-9.236-20.382-20.382-20.382H32.484c-11.465 0-20.382 9.235-20.382 20.382 0 11.146 9.236 20.382 20.382 20.382z"/></svg>
+    <span>Oracle PL/SQL</span>
   </div>
 
 
@@ -57,17 +57,23 @@
 <div class="portfolio">
   <div class="project project1">
       <div style="font-weight:bold; text-align:center;">30 Second Farm<br>February 2023<br>
-        <a href="https://www.youtube.com/watch?v=s5Cf9bQtLks&ab_channel=CaraNetzer"><img style="width:400px;" src="./30-Second-Farm-thumbnail.png" alt="30 Second Farm project thumbnail" ></a>
+        <a href="https://www.youtube.com/watch?v=s5Cf9bQtLks&ab_channel=CaraNetzer" target="_blank">
+          <img src="../images/30-Second-Farm-thumbnail.png" alt="30 Second Farm project thumbnail">
+        </a>
       </div>
     </div>
   <div class="project project2">
       <div style="font-weight:bold; text-align:center;">Sprite[0]<br>December 2022<br>
-        <a href="https://www.youtube.com/watch?v=fN48v7ZmaWk&ab_channel=CaraNetzer"><img style="width:400px;" src="./Sprite%5B0%5D-thumbnail.png" alt="sprite[0] project thumbnail" ></a>
+        <a href="https://www.youtube.com/watch?v=fN48v7ZmaWk&ab_channel=CaraNetzer" target="_blank">
+          <img src="../images/Sprite%5B0%5D-thumbnail.png" alt="sprite[0] project thumbnail">
+        </a>
       </div>
     </div>
   <div class="project project3">
       <div style="font-weight:bold; text-align:center;">Podcast Recommender<br>August 2022<br>
-        <a href="https://www.youtube.com/watch?v=1zLuU1YBDWY&ab_channel=CaraNetzer"><img style="width:400px;" src="./Podcast-Recommender-thumbnail.png" alt="podcast recomender project thumbnail" ></a>
+        <a href="https://www.youtube.com/watch?v=1zLuU1YBDWY&ab_channel=CaraNetzer" target="_blank">
+          <img src="../images/Podcast-Recommender-thumbnail.png" alt="podcast recomender project thumbnail">
+        </a>
       </div>
     </div>
 </div>
@@ -89,32 +95,25 @@ B.A., Major in Sociology
 
 # Courses
 
-<table>
-  <tr>
-    <td>
-      <div style="font-weight: bold; text-align:center;">Introduction to Software Testing</div>
-      <div style="text-align:center;">University of Minnesota - Coursera<br>January 2023 - February 2023</div>
-    </td>
-    <td>
-      <div style="font-weight: bold; text-align:center;">CS50's Introduction to Game Development</div>
-      <div style="text-align:center;">HarvardX - CS50G<br>October 2023 - March 2023</div>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div style="font-weight: bold; text-align:center;">Intro to Computer Science</div>
-      <div style="text-align:center;">Haverford College - CMSC-H105<br>Fall 2016</div>
-    </td>
-    <td>
-      <div style="font-weight: bold; text-align:center;">Intro to Data Structures</div>
-      <div style="text-align:center;">Bryn Mawr College - CMSC-B206<br>Spring 2017</div>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div style="font-weight: bold; text-align:center;">Discrete Mathematics I</div>
-      <div style="text-align:center;">Bryn Mawr College - CMSC-B231<br>Spring 2017</div>
-    </td>
-    <td></td>
-  </tr>
-</table>
+<div class="courses">
+  <div class="course course1">
+    <div><b>Introduction to Software Testing</b></div>
+    <div>University of Minnesota - Coursera<br>January 2023 - February 2023</div>
+  </div>
+  <div class="course course2">
+    <div><b>CS50's Introduction to Game Development</b></div>
+    <div>HarvardX - CS50G<br>October 2023 - March 2023</div>
+  </div>
+  <div class="course course3">
+    <div><b>Intro to Computer Science</b></div>
+    <div>Haverford College - CMSC-H105<br>Fall 2016</div>
+  </div>
+  <div class="course course4">
+    <div><b>Intro to Data Structures</b></div>
+    <div>Bryn Mawr College - CMSC-B206<br>Spring 2017</div>
+  </div>
+  <div class="course course5">
+    <div><b>Discrete Mathematics</b></div>
+    <div>Bryn Mawr College - CMSC-B231<br>Spring 2017</div>
+  </div>
+</div>

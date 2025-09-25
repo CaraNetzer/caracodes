@@ -142,8 +142,13 @@ td {
 }
 
 .project {
-  border: 1px solid black;
-  border-radius: 5%;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+}
+
+.project:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .project1 {
@@ -156,6 +161,48 @@ td {
 
 .project3 {
   grid-area: project3;
+}
+
+.project img {
+  width: 100%;
+}
+
+.courses {
+  display: grid;
+  grid-template-areas:
+    "course1 course2"
+    "course3 course4"
+    "course5 .";
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.course {
+  border-radius: 5%;
+  text-align: center;
+  padding: .5rem;
+  background-color: #93867F;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.course1 {
+  grid-area: course1;
+}
+
+.course2 {
+  grid-area: course2;
+}
+
+.course3 {
+  grid-area: course3;
+}
+
+.course4 {
+  grid-area: course4;
+}
+
+.course5 {
+  grid-area: course5;
 }
 
 .library {
@@ -222,4 +269,19 @@ svg:hover {
   background-color: black;
   color: white;
   border-radius: 0px !important;
+}
+
+.post-card {
+  background-color: #93867F;
+  padding: .25rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 1rem 0;
+}
+
+.post-card a {
+  color: white;
+  text-decoration: none;
+}
+.post-card a:hover {
+  text-decoration: underline;
 }

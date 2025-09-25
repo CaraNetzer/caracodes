@@ -20,7 +20,7 @@
 
   <div class="book">
     <img src="../images/softwarearchitecturepatterns.jpg">
-    <p>Software Architecture Patterns</p>
+    <p>Software Architecture Patterns - Completed</p>
   </div>
 
   <div class="book">
