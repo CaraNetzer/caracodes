@@ -1,4 +1,4 @@
-# Hi, my name is Cara. I am passionate about public sector web development. {: #subtitle}
+# [Placeholder text. Hi, my name is Cara. I am passionate about public sector web development.] {: #subtitle}
 
 # Tech Stack
 
