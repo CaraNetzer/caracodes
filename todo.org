@@ -1,0 +1,14 @@
+- [x] typewriter title
+    - [x] get cursor height correct - change padding to margin
+- [x] pick a new font for rest of site
+- [ ] update courses and reorder them
+    - [x] add nand2 tetris 
+    - [ ] and maybe embedded systems one
+    - [x] make it a 3x3 grid
+    - [x] update edx course dates
+- [x] put portfolio projects on one line
+- [ ] add a frontend web framework to the tech stack section 
+    - (which ever I start using for this project, probably react)
+- [ ] add resume bullet points from canva resume
+- [ ] have more of a demarcation of sections on the homepage + better spacing
+- [ ] color change for the header

@@ -6,7 +6,7 @@ html {
 body {
   width: 80%;
   margin: auto;
-  font-family: 'Space Mono';
+  font-family: Arial, sans-serif;
 }
 
 h1, h2 {
@@ -49,7 +49,8 @@ h1, h2 {
 .nav li,
 .nav li h1,
 .nav li h1 a {
-  padding-left: 0 !important;
+  padding: 0 !important;
+  margin: 1rem 0;
 }
 
 .nav li {
@@ -110,9 +111,8 @@ td {
 .portfolio {
   display: grid;
   grid-template-areas:
-    "project1 project2"
-    "project3 .";
-  grid-template-columns: 1fr 1fr;
+    "project1 project2 project3";
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
 
@@ -145,10 +145,11 @@ td {
 .courses {
   display: grid;
   grid-template-areas:
-    "course1 course2"
-    "course3 course4"
-    "course5 .";
-  grid-template-columns: 1fr 1fr;
+    "course6 course1 course2"
+    "course3 course4 course5"
+    "course7 . .";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 1rem;
 }
 
@@ -269,4 +270,38 @@ svg:hover {
   text-decoration: underline;
   text-decoration-color: #3E92CC;
   text-decoration-thickness: 2px;
+}
+
+.typewriter {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.typewriter h1 {
+  font-family: 'Courier New', monospace;
+  overflow: hidden;
+  margin-inline: auto;
+  white-space: nowrap;
+  border-right: 1px solid;
+  border-radius: 0 !important;
+  animation: typing 1.75s steps(9) forwards, blink 1s 1s step-end 5;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+    border-radius: 0 !important;
+  }
 }

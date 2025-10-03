@@ -90,19 +90,23 @@ Intensive full-time 6-month software development immersive training program focu
 
 
 ### Haverford College -  Class of 2020
-B.A., Major in Sociology
+B.A., Major in Sociology (Bryn Mawr College)
 
 
-# Courses
+## Relevant Coursework
 
 <div class="courses">
+  <div class="course course6">
+    <div><b>Nand2Tetris: The Elements of Computing Systems</b></div>
+    <div>University of Jerusalem - Coursera<br>November 2023 - September 2024</div>
+  </div>
   <div class="course course1">
     <div><b>Introduction to Software Testing</b></div>
     <div>University of Minnesota - Coursera<br>January 2023 - February 2023</div>
   </div>
   <div class="course course2">
     <div><b>CS50's Introduction to Game Development</b></div>
-    <div>HarvardX - CS50G<br>October 2023 - March 2023</div>
+    <div>HarvardX - CS50G<br>October 2022 - March 2023</div>
   </div>
   <div class="course course3">
     <div><b>Intro to Computer Science</b></div>
