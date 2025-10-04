@@ -1,12 +1,18 @@
+:root {
+  --background-color: #F0F6F6;
+  --nav-background-color: white;
+  --border-color: #44A1A0;
+  --underline-color: #3E92CC;
+}
+
 html {
-  background-color: #F0F6F6;
+  background-color: var(--background-color);
   color: black !important;
 }
 
 body {
-  width: 80%;
-  margin: auto;
   font-family: Arial, sans-serif;
+  margin: 0;
 }
 
 h1, h2 {
@@ -18,39 +24,49 @@ h1, h2 {
     "nav"
     "main"
     "foot";
-  grid-template-columns: repeat(1, 1fr);
+  /* grid-template-columns: repeat(1, 1fr); */
   grid-template-rows: repeat(3, auto);
-  gap: 10px;
-  padding: 0 2rem;
-  margin: 2rem auto;
-  width: 80%;
+  gap: 1rem;
 }
 
 #grid-container * {
   border-radius: .25rem;
 }
 
+#grid-container h1 {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+ul.nav {
+  margin: 0;
+  padding: 0;
+}
+
 .nav {
   grid-area: nav;
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
   gap: 1rem;
   font-weight: bold;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--nav-background-color);
+  padding: 0 2rem !important;
 }
 
 .nav * {
-  padding: 1rem;
+  padding: .5rem 1rem;
 }
 
-.nav,
-.nav li,
+/* .nav, */
+/* .nav li, */
 .nav li h1,
 .nav li h1 a {
-  padding: 0 !important;
-  margin: 1rem 0;
+  padding-right: 0;
+  padding-left: 0;
+  /* padding: 0 !important; */
+  /* margin: 1rem 0; */
 }
 
 .nav li {
@@ -60,7 +76,41 @@ h1, h2 {
 .nav li a {
   color: black;
   text-decoration: none;
-  border: 3px solid #F0F6F6;
+  border: 3px solid var(--nav-background-color);
+}
+
+.typewriter {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.typewriter h1 {
+  font-family: 'Courier New', monospace;
+  overflow: hidden;
+  margin-inline: auto;
+  white-space: nowrap;
+  border-right: 1px solid;
+  border-radius: 0 !important;
+  animation: typing 1.75s steps(9) forwards, blink 1s 1s step-end 5;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+    border-radius: 0 !important;
+  }
 }
 
 #nav-left {
@@ -71,13 +121,13 @@ h1, h2 {
 
 .nav li a:hover:not(#home) {
   text-decoration: underline;
-  text-decoration-color: #3E92CC;
+  text-decoration-color: var(--underline-color);
   text-decoration-thickness: 3px;
 }
 
 #home:hover {
   text-decoration: underline;
-  text-decoration-color: #3E92CC;
+  text-decoration-color: var(--underline-color);
   text-decoration-thickness: 3px;
 }
 
@@ -91,11 +141,15 @@ h1, h2 {
 
 #main-content {
   grid-area: main;
+  width: 80%;
+  margin: auto;
+  padding: 0 2rem;
 }
 
 #foot {
   grid-area: foot;
-  margin-bottom: 1rem;
+  background-color: var(--border-color);
+  padding: 0 7rem;
 }
 
 table {
@@ -145,8 +199,8 @@ td {
 .courses {
   display: grid;
   grid-template-areas:
-    "course6 course1 course2"
-    "course3 course4 course5"
+    "course1 course2 course3"
+    "course4 course5 course6"
     "course7 . .";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -154,7 +208,7 @@ td {
 }
 
 .course {
-  border: 3px solid #44A1A0; 
+  border: 3px solid var(--border-color); 
   border-radius: 5%;
   text-align: center;
   padding: .5rem;
@@ -201,7 +255,7 @@ td {
 }
 
 #subtitle {
-  padding: 2rem 0 8rem 0;
+  padding: 2rem 0;
   text-align: justify;
 }
 
@@ -248,7 +302,7 @@ svg:hover {
 }
 
 .post-card {
-  border: 3px solid #44A1A0; 
+  border: 3px solid var(--border-color); 
   padding: .25rem 1rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   margin: 1rem 0;
@@ -268,40 +322,13 @@ svg:hover {
 }
 .post-card a:hover {
   text-decoration: underline;
-  text-decoration-color: #3E92CC;
+  text-decoration-color: var(--underline-color);
   text-decoration-thickness: 2px;
 }
 
-.typewriter {
-  display: flex;
-  justify-content: center;
-  width: fit-content;
-}
-
-.typewriter h1 {
-  font-family: 'Courier New', monospace;
-  overflow: hidden;
-  margin-inline: auto;
-  white-space: nowrap;
-  border-right: 1px solid;
-  border-radius: 0 !important;
-  animation: typing 1.75s steps(9) forwards, blink 1s 1s step-end 5;
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-    border-radius: 0 !important;
-  }
+hr {
+  width: 65%;
+  margin: 5rem auto;
+  background-color: var(--underline-color);
+  height: 2px;
 }

@@ -1,9 +1,15 @@
+# Resume
+
 ## WV Higher Education Policy Commission
 Hybrid / Charleswon, WV
 
 March 2023 - Present
 
-*
+* Maintain and develop ASP.NET Web Forms applications in C#.
+* Write back-end PL/SQL procedures.
+* Spearheaded the introduction of git version control into our workflow.
+* Participate in rounds of development and testing with a team.
+* Review, analyze, and communicate with users about data submitted via our applications.
 
 ## NewForce - Junior Full Stack Developer
 Remote / Charleston, WV
@@ -44,3 +50,5 @@ Fall 2016 - Fall 2019
 * Provided students and staff with basic IT troubleshooting assistance.
 * Troubleshooted primarily wi-fi, printer, and user account issues.
 * Balanced phone etiquette with excellent customer service.
+
+---
