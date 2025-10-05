@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Embedded Systems Essentials with Arm",
+    "school": "ArmEducation - EdX",
+    "timeframe": "October 2025 - Present"
+  },
+  {
+    "id": 2,
+    "title": "Nand2Tetris: The Elements of Computing Systems",
+    "school": "University of Jerusalem - Coursera",
+    "timeframe": "November 2023 - September 2024"
+  },
+  {
+    "id": 3,
+    "title": "Introduction to Software Testing",
+    "school": "University of Minnesota - Coursera",
+    "timeframe": "January 2023 - February 2023"
+  },
+  {
+    "id": 4,
+    "title": "CS50's Introduction to Game Development",
+    "school": "HarvardX - CS50G",
+    "timeframe": "October 2022 - March 2023"
+  },
+  {
+    "id": 5,
+    "title": "Discrete Mathematics",
+    "school": "Bryn Mawr College - CMSC-B231",
+    "timeframe": "Spring 2017"
+  },
+  {
+    "id": 6,
+    "title": "Intro to Data Structures",
+    "school": "Bryn Mawr College - CMSC-B206",
+    "timeframe": "Spring 2017"
+  },
+  {
+    "id": 7,
+    "title": "Intro to Computer Science",
+    "school": "Haverford College - CMSC-H105",
+    "timeframe": "Fall 2016"
+  }
+]
