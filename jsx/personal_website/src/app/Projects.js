@@ -9,9 +9,13 @@ export default function Projects() {
   )
 
   return (
-    <div className="portfolio">
-      {projects}
-    </div>
+    <>
+      <h1>Portfolio</h1>
+      <div className="portfolio">
+        {projects}
+      </div>
+      <hr />
+    </>
   )
 }
 

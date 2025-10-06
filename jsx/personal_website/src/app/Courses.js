@@ -6,6 +6,7 @@ export default function Courses() {
   )
   return (
     <>
+      <h1>Education</h1>
       <h3>NewForce - June 2022 - January 2023</h3>
       <p>
         Intensive full-time 6-month software development immersive training program
@@ -21,11 +22,12 @@ export default function Courses() {
       <div className="courses">
         {courses}
       </div>
+      <hr />
     </>
   )
 }
 
-function Course({id, title, school, timeframe}) {
+function Course({ id, title, school, timeframe }) {
   return (
     <div className={`course course${id}`}>
       <div>
