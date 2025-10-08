@@ -2,6 +2,46 @@
   {
     "id": 1,
     "label": "HTML",
-    "file": "js.svg"
+    "sprite": "htmlsprite"
+  },
+  {
+    "id": 2,
+    "label": "CSS",
+    "sprite": "csssprite"
+  },
+  {
+    "id": 3,
+    "label": "Javascript",
+    "sprite": "jssprite"
+  },
+  {
+    "id": 4,
+    "label": "C#",
+    "sprite": "csharpsprite"
+  },
+  {
+    "id": 5,
+    "label": "Python",
+    "sprite": "pythonsprite"
+  },
+  {
+    "id": 6,
+    "label": "Bash",
+    "sprite": "bashsprite"
+  },
+  {
+    "id": 7,
+    "label": "Git",
+    "sprite": "gitsprite"
+  },
+  {
+    "id": 8,
+    "label": "Oracle PL/SQL",
+    "sprite": "oraclesprite"
+  },
+  {
+    "id": 9,
+    "label": "React",
+    "sprite": "reactsprite"
   }
 ]
