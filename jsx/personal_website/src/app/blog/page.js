@@ -1,25 +1,36 @@
-export default function Blog() {
+import fs from 'fs'
+import PostCard from './PostCard.js'
+
+const postsDirectory = path.join(process.cwd(), 'blogposts')
+
+export default function Blog(props) {
+
+    const posts = props.posts;
+
+    const fileNames = fs.readdirSync(postsDirectory);
+
+    const allPostsData = fileNames.map((fileName) => {
+        const id = fileName.replace(/\.html$/, '');
+        return <PostCard id={id} />
+    });
+
     return (
         <>
             <title>Blog - CaraCodes</title>
-            <div className="post-card">
-                <h3>
-                    <a href="./blog/about_me.html">
-                        About Me/Intro to Blogging
-                    </a>
-                </h3>
-                <p>Date: 2025-10-01</p>
-                <p>What you can expect from CaraCodes</p>
-            </div>
-            <div className="post-card">
-                <h3>
-                    <a href="./blog/documentation.html">
-                        Documentation: Zero to ~Some~
-                    </a>
-                </h3>
-                <p>Date: 2025-10-01</p>
-                <p>What to do when your technical documentation exists only as an oral tradition.</p>
-            </div>
+            {fileNames.map((fileName) => {
+                const id = fileName.replace(/\.html$/, '');
+                return <PostCard id={id} />
+            })
+            }
         </>
     )
+}
+
+export async function getStaticProps() {
+
+    const filePath = path.join(process.cwd(), 'posts.json');
+    const jsonData = await fsPromises.readFile(filePath);
+    const posts = JSON.parse(jsonData);
+
+    return { props: posts }
 }
