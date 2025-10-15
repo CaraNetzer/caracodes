@@ -1,16 +1,20 @@
 [
-	{
-		"title": "About Me/Intro to Blogging",
-		"file_name": "about_me.html",
-		"tags": "meta, personal?, about",
-		"date": "2025-10-01",
-		"tagline": "What you can expect from CaraCodes"
-	},
-	{
-		"title": "Documentation: Zero to ~Some~",
-		"file_name": "documentation.html",
-		"tags": "docs",
-		"date": "2025-10-01",
-		"tagline": "What to do when your technical documentation exists only as an oral tradition."
-	}
+    {
+        "id": 1,
+        "title": "About Me/Intro to Blogging",
+        "file_name": "about_me.html",
+        "tags": "meta, personal?, about",
+        "date": "2025-10-01",
+        "tagline": "What you can expect from CaraCodes",
+        "content": "<h1>Title</h1>"
+    },
+    {
+        "id": 2,
+        "title": "Documentation: Zero to ~Some~",
+        "file_name": "documentation.html",
+        "tags": "docs",
+        "date": "2025-10-01",
+        "tagline": "What to do when your technical documentation exists only as an oral tradition."
+        "content": "<h1>Title 2</h1>"
+    }
 ]
