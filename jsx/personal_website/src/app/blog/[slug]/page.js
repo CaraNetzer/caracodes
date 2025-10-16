@@ -1,17 +1,28 @@
-'use client';
-import { useParams } from 'next/navigation'
+const fs = require('fs');
+const fsPromises = fs.promises;
 
-export default function Page() {
-    const params = useParams()
+export default async function Page({ params }) {
+    const { slug } = await params
 
-    console.log(params)
+    let file = `/blogposts/${slug}.mdx`
+
+    const { default: Post } = await import(`@${file}`)
+
+    let { title, date } = await getMetadata(slug)
+
     return (
         <>
-            <p>Post: {params.slug}</p>
+            <h1>{title}</h1>
+            <p>{date}</p>
+            <Post />
         </>
     )
 }
 
-function getPostBySlug(slug) {
+async function getMetadata(slug) {
 
+    const jsonData = await fsPromises.readFile('src/app/blog/posts.json')
+    const posts = JSON.parse(jsonData)
+
+    return posts.find(post => post.file_name == slug)
 }
