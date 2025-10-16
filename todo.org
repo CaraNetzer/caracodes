@@ -2,18 +2,26 @@
     - [x] get cursor height correct - change padding to margin
 - [x] pick a new font for rest of site
 - [x] update courses and reorder them
-    - [x] add nand2 tetris 
+    - [x] add nand2 tetris
     - [x] and maybe embedded systems one
     - [x] make it a 3x3 grid
     - [x] update edx course dates
 - [x] put portfolio projects on one line
-- [ ] add a frontend web framework to the tech stack section 
+- [x] add a frontend web framework to the tech stack section
     - (which ever I start using for this project, probably react)
 - [x] add resume bullet points from canva resume
 - [x] have more of a demarcation of sections on the homepage + better spacing
 - [x] color change for the header
-- [ ] move date field up on blog posts
-- [ ] create inspo page
-- [ ] add titles attributes to pages once i switch it to use a framework
+- [x] move date field up on blog posts
+- [x] create inspo page
+- [x] add titles attributes to pages once i switch it to use a framework
+- [x] make library tiles smaller
+- [x] add framework
+    - [x] add resume page
+    - [x] add blog index 
+        - [ ] and blog pages
+    - [x] figure out image rendering
+- [ ] figure out how to make book covers all the same size
+- [ ] figure out logo layout on homepage
 - [ ] create mobile layout
-- [ ] make library tiles smaller
+- [ ] add timeline css to resume
