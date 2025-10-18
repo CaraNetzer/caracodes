@@ -20,7 +20,7 @@ export default async function Blog() {
     );
 }
 
-export async function getData() {
+async function getData() {
 
     const filePath = path.join(process.cwd(), '/src/app/blog/posts.json')
     const jsonData = await fsPromises.readFile(filePath)

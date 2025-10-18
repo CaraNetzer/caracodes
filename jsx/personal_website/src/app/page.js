@@ -18,6 +18,7 @@ export default function Home() {
 
 function Shuffle() {
     const [index, setIndex] = useState(0)
+    const [show, setShow] = useState(0);
 
     const carosel = [
         "Welcome!",
@@ -28,19 +29,24 @@ function Shuffle() {
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex((prevIndex) => ((prevIndex + 1) % (carosel.length)))
-        }, 1500);
+        }, 1750);
 
         return () => clearInterval(interval);
     }, []);
 
-    function stop() {
-        clearInterval(interval);
-    }
+
+    useEffect(() => {
+      let timer = setTimeout(() => setShow(true), carosel.length * 1750 * 2);
+
+      return () => {
+        clearTimeout(timer);
+      };
+    }, []);
 
     return (
         <>
-            <h1 id="subtitle" title="Play/Pause" /* onClick={clearInterval(interval)} */>
-                {carosel[index]}
+            <h1 id="subtitle">
+                {show ? carosel.join(" ") : carosel[index]}
                 {/* <span id="shuffle">🔀</span>*/}
             </h1>
             <hr />
