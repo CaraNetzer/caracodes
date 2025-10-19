@@ -15,7 +15,7 @@ export default async function Blog() {
             <title>Blog - CaraCodes</title>
             {posts.map((post) => {
                 return <PostCard post={post} key={post["id"]}/>
-            })}
+            }).reverse()}
         </>
     );
 }

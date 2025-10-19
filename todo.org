@@ -19,10 +19,10 @@
 - [x] add framework
     - [x] add resume page
     - [x] add blog index 
-        - [ ] and blog pages
+        - [x] and blog pages
     - [x] figure out image rendering
-- [ ] figure out how to make book covers all the same size
-- [ ] figure out logo layout on homepage
+- [x] figure out how to make book covers all the same size
+- [x] figure out logo layout on homepage
 - [ ] create mobile layout
 - [x] add timeline css to resume
 - [x] pick link colors
@@ -30,6 +30,7 @@
 - [ ] back to top button
 - [ ] figure out how to get the typewriter to start over on each page load
 - [ ] increase default text size
+- [ ] clean up extra/unused files
 
 - [ ] Think about what you want the user to see first!  Where should you draw their attention?
 - [ ] Using some accessibility tools to evaluate how well your website conforms (see this link to search for free tools to do that) to requirements

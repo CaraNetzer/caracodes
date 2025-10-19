@@ -1,0 +1,27 @@
+## Problems caused by lack of documentation
+
+- Onboarding becomes very difficult. It takes months or years for new developers to become familiar with the entire code-base. Everyone who works on a project starts at zero. Precious meeting time is spent on re-explaining the structure of core applications due to a lack of permanent visualizations available to share with everyone. Every so often something will be sketched out on a zoom whiteboard, but inevitably saved somewhere obscure and needs to be resketched a month later.
+- Stress about retention. "We need to keep this developer because we already invested a year and a half getting them up to speed on all our projects."
+- Institutional memory issues. Word-of-mouth documentation becomes unreliable. The longer someone goes without working on a project, the more likely they are to mis-remember pieces, confuse which project a tidbit they needed to remember is relevant to, or just completely forget important components.
+- Personal confusion. Outside of communicating with others, having no documentation on a project even with only one person assigned to it can get confusing. In an industry known for logic puzzles and intensely technical reasoning, we have every reason to make things easier for ourselves wherever possible.
+
+## Where to start
+- Make a list of what you want to document. For me this looked like:
+    - Descriptions of changes (more detailed than git commits)
+    - Project overviews
+    - Troubleshooting notes
+    - How-tos for any specific, common processes
+- Find templates. I used The Good Docs Project. The topics I was wanting to document ended up mapping to:
+    - Changelogs
+    - READMEs
+    - Reference documents
+    - How-tos
+- Talk with your team about when and how these documents will be updated. On my team, we are discussing a few different ideas for where they will live. In the past, documentation was saved in a scattered manner to our file shares or in individual developer’s onenote notebooks (if it got written at all). Going forward, we are going to try out saving these specific documents in each projects’ git repository (short term goal) and in a wiki application (long term goal).
+- Actually do the thing. When you finish an update on an application and publish that release, update the changelog! Add or change anything that needs to be added or changed in the README! Add an entry in your troubleshooting document! The best time to write about what you have done is right after you’ve done it, or better yet, while you’re doing it. It will be much harder later when it's not fresh in your memory. Add it to your version control routine. If you commit and push your code at the end of each day, plan to have your documentation written and ready to include in that process. Likely adding to your documentation isn’t something you’ll need to do everyday, but you can think of it as part of that routine.
+## Overdocumentation
+
+There is such a thing as too much tracking. Like all things in life, moderation is needed. Not doing enough causes problems, but doing too much will as well. Some projects will need all the documents listed above, and some will only need one, or a couple.
+
+## Summary
+
+It’s better to start somewhere and get the ball rolling. You can always change the routine in the future. Change is good and an inevitability.
