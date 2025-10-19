@@ -1,7 +1,7 @@
-import svgs from './data/svgs.json'
+import icons from './data/svgs.json'
 
 export default function Logos() {
-    let logos = svgs.map(svg => <Logo label={svg.label} key={svg.id} sprite={svg.sprite} />)
+    let logos = icons.map(icon => <Logo label={icon.label} key={icon.id} icon={icon.icon} />)
     return (
         <>
             <h1>Tech Stack</h1>
@@ -13,12 +13,10 @@ export default function Logos() {
     )
 }
 
-function Logo({ label, id, sprite }) {
+function Logo({ label, id, icon }) {
     return (
         <div className="logo" id={id}>
-            <svg>
-                <use href={`/allLogos.svg#${sprite}`} />
-            </svg>
+            <img src={`/icons8-${icon}-48.png`} alt={`${label} logo`} />
             <span>{label}</span>
         </div>
     )

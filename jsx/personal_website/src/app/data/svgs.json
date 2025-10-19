@@ -1,47 +1,47 @@
 [
   {
     "id": 1,
-    "label": "HTML",
-    "sprite": "htmlsprite"
+    "label": "C#",
+    "icon": "csharp"
   },
   {
     "id": 2,
-    "label": "CSS",
-    "sprite": "csssprite"
+    "label": "HTML",
+    "icon": "html5"
   },
   {
     "id": 3,
-    "label": "Javascript",
-    "sprite": "jssprite"
+    "label": "CSS",
+    "icon": "css3"
   },
   {
     "id": 4,
-    "label": "C#",
-    "sprite": "csharpsprite"
+    "label": "Javascript",
+    "icon": "javascript"
   },
   {
     "id": 5,
     "label": "Python",
-    "sprite": "pythonsprite"
+    "icon": "python"
   },
   {
     "id": 6,
     "label": "Bash",
-    "sprite": "bashsprite"
+    "icon": "bash"
   },
   {
     "id": 7,
     "label": "Git",
-    "sprite": "gitsprite"
+    "icon": "git"
   },
   {
     "id": 8,
-    "label": "Oracle PL/SQL",
-    "sprite": "oraclesprite"
+    "label": "PL/SQL",
+    "icon": "oracle"
   },
   {
     "id": 9,
     "label": "React",
-    "sprite": "reactsprite"
+    "icon": "reactjs"
   }
 ]
