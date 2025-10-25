@@ -1,16 +1,46 @@
+'use client'
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react';
+
+// export default function Nav() {
+//     return (
+//         <ul id="nav" className="nav topnav">
+//             <li className="typewriter">
+//                 <h1><Link href="/" id="home" title="Home">CaraCodes</Link> </h1>
+//             </li>
+//             <div id="nav-left">
+//                 <li><Link href="/resume">Resume</Link></li>
+//                 <li><Link href="/library">Library</Link></li>
+//                 <li><Link href="/blog">Blog</Link></li>
+//             </div>
+//         </ul>
+//     )
+// }
 
 export default function Nav() {
+    const [showNavbar, setShowNavbar] = useState(false);
+
+    const handleShowNavbar = () => {
+        setShowNavbar(!showNavbar);
+    };
+
     return (
-        <ul className="nav">
-            <li className="typewriter">
-                <h1><Link href="/" id="home" title="Home">CaraCodes</Link> </h1>
-            </li>
-            <div id="nav-left">
-                <li><Link href="/resume">Resume</Link></li>
-                <li><Link href="/library">Library</Link></li>
-                <li><Link href="/blog">Blog</Link></li>
+        <nav className="nav">
+            <div className="typewriter">
+                <h1><Link href="/" id="home" title="Home">CaraCodes</Link></h1>
             </div>
-        </ul>
-    )
-}
+            <div className={`nav-elements  ${showNavbar && "active"}`}>
+                <ul id="nav-left" className="nav topnav">
+                    <li><Link href="/resume">Resume</Link></li>
+                    <li><Link href="/library">Library</Link></li>
+                    <li><Link href="/blog">Blog</Link></li>
+                </ul>
+            </div>
+            <div className="menu-icon" onClick={handleShowNavbar}>
+                <FontAwesomeIcon icon={faBars} />
+            </div>
+        </nav>
+    );
+};
