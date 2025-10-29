@@ -26,16 +26,20 @@ export default function Nav() {
         setShowNavbar(!showNavbar);
     };
 
+    const hideNavbar = () => {
+        setShowNavbar(false);
+    };
+
     return (
         <nav className="nav">
             <div className="typewriter">
-                <h1><Link href="/" id="home" title="Home">CaraCodes</Link></h1>
+                <h1 onClick={hideNavbar}><Link href="/" id="home" title="Home">CaraCodes</Link></h1>
             </div>
             <div className={`nav-elements  ${showNavbar && "active"}`}>
                 <ul id="nav-left" className="nav topnav">
-                    <li><Link href="/resume">Resume</Link></li>
-                    <li><Link href="/library">Library</Link></li>
-                    <li><Link href="/blog">Blog</Link></li>
+                    <li onClick={hideNavbar}><Link href="/resume">Resume</Link></li>
+                    <li onClick={hideNavbar}><Link href="/library">Library</Link></li>
+                    <li onClick={hideNavbar}><Link href="/blog">Blog</Link></li>
                 </ul>
             </div>
             <div className="menu-icon" onClick={handleShowNavbar}>
