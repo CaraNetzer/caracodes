@@ -1,6 +1,6 @@
 export default function Resume() {
     return (
-        <>
+        <div className="resume">
             <title>Resume - CaraCodes</title>
 
             <h1>Resume</h1>
@@ -66,7 +66,7 @@ export default function Resume() {
                 </ul>
             </div>
             <hr/>
-        </>
+        </div>
     )
 }
 

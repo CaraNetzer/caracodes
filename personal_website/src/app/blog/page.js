@@ -13,6 +13,7 @@ export default async function Blog() {
     return (
         <>
             <title>Blog - CaraCodes</title>
+            <h1>Posts</h1>
             {posts.map((post) => {
                 return <PostCard post={post} key={post["id"]}/>
             }).reverse()}

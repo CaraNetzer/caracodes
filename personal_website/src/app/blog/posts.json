@@ -6,13 +6,5 @@
         "tags": "meta, personal?, about",
         "date": "2025-11-01",
         "tagline": "What you can expect from CaraCodes"
-    },
-    {
-        "id": 2,
-        "title": "Documentation: Zero to ~Some~",
-        "file_name": "documentation",
-        "tags": "docs",
-        "date": "2025-10-01",
-        "tagline": "What to do when your technical documentation exists only as an oral tradition."
     }
 ]

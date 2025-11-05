@@ -1,4 +1,4 @@
-export default function() {
+export default function Inspo() {
     return (
         <>
             <title>Inspiration - CaraCodes</title>

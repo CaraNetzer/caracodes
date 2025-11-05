@@ -23,14 +23,18 @@
     - [x] figure out image rendering
 - [x] figure out how to make book covers all the same size
 - [x] figure out logo layout on homepage
-- [ ] create mobile layout
+- [x] create mobile layout
 - [x] add timeline css to resume
 - [x] pick link colors
 - [x] only run carosel once, maybe slow it down
 - [ ] back to top button
 - [ ] figure out how to get the typewriter to start over on each page load
-- [ ] increase default text size
-- [ ] clean up extra/unused files
+- [x] increase default text size
+- [x] clean up extra/unused files
+- [x] fix img spacing on library page
+- [x] change mobile width on resume page
+- [x] change blog post dates
+- [x] read over blog posts
 
 - [ ] Think about what you want the user to see first!  Where should you draw their attention?
 - [ ] Using some accessibility tools to evaluate how well your website conforms (see this link to search for free tools to do that) to requirements

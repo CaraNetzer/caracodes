@@ -1,8 +1,8 @@
 /* @import "tailwindcss"; */
 
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
+    --background: #171717;
+    --foreground: #F0F6F6;
     --background-color: #F0F6F6;
     --nav-background-color: white;
     --border-color: #44A1A0;
@@ -16,12 +16,12 @@
     --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
-}
+/* @media (prefers-color-scheme: dark) { */
+/*     :root { */
+/*         --background: #0a0a0a; */
+/*         --foreground: #ededed; */
+/*     } */
+/* } */
 
 body {
     background: var(--background);
@@ -190,12 +190,12 @@ ul.nav {
         text-align: center;
     }
 
-    #subtitle {
-        font-size: clamp(8px, 5vw, 25px);
-    }
+    /* #subtitle { */
+    /*     font-size: clamp(8px, 6vw, 25px); */
+    /* } */
 
     #home {
-        font-size: clamp(8px, 5vw, 25px);
+        font-size: clamp(8px, 7vw, 1em);
     }
 
     .logo {
@@ -220,6 +220,14 @@ ul.nav {
             "course7 ." !important;
         grid-template-columns: 1fr 1fr !important;
         grid-template-rows: 1fr 1fr 1fr !important;
+    }
+
+    .work {
+        max-width: 100% !important;
+    }
+
+    #foot {
+        /* padding: 0 3rem !important; */
     }
 }
 
@@ -294,7 +302,7 @@ to {
 #foot {
     grid-area: foot;
     background-color: var(--border-color);
-    padding: 0 7rem;
+    padding: 0 5%;
 }
 
 table {
@@ -409,6 +417,9 @@ td {
 .book {
     /* width: 31%; */
     transition: transform .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .book:hover {
@@ -420,6 +431,8 @@ td {
     text-align: justify;
     margin: auto;
     height: 3rem;
+    font-size: max(8px, min(6vw, 1.55em));
+    max-width: 27em;
 }
 
 svg {

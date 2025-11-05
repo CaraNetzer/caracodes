@@ -27,8 +27,9 @@ function Shuffle() {
     ]
 
     useEffect(() => {
+        const caroselInner = carosel
         const interval = setInterval(() => {
-            setIndex((prevIndex) => ((prevIndex + 1) % (carosel.length)))
+            setIndex((prevIndex) => ((prevIndex + 1) % (caroselInner.length)))
         }, 1750);
 
         return () => clearInterval(interval);
@@ -36,7 +37,9 @@ function Shuffle() {
 
 
     useEffect(() => {
-      let timer = setTimeout(() => setShow(true), carosel.length * 1750 * 2);
+        const caroselInner = carosel
+        console.log(carosel.length)
+      let timer = setTimeout(() => setShow(true), caroselInner.length * 1750);
 
       return () => {
         clearTimeout(timer);
@@ -46,7 +49,8 @@ function Shuffle() {
     return (
         <>
             <h1 id="subtitle">
-                {show ? carosel.join(" ") : carosel[index]}
+                {/*show ? carosel.join(" ") : carosel[index]*/}
+                {carosel.join(" ")}
                 {/* <span id="shuffle">🔀</span>*/}
             </h1>
             <hr />

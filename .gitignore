@@ -1,5 +1,8 @@
 # Created by venv; see https://docs.python.org/3/library/venv.html
 
+nixihost_ssh_key
+nixihost_ssh_key.pub
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

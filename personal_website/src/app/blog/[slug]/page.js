@@ -26,3 +26,13 @@ async function getMetadata(slug) {
 
     return posts.find(post => post.file_name == slug)
 }
+
+export async function generateStaticParams() {
+    return [{slug: "about_me"}]
+
+    const posts = await fsPromises.readFile('src/app/blog/posts.json')
+
+    return posts.map((post) => ({
+      slug: post.file_name,
+    }))
+}
