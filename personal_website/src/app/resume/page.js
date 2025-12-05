@@ -9,7 +9,7 @@ export default function Resume() {
             <p className="date">March 2023 - Present </p>
             <div className="work">
                 <h2>WV Higher Education Policy Commission</h2>
-                <p>Hybrid / Charleswon, WV </p>
+                <p>Hybrid / Charleston, WV </p>
                 <ul>
                     <li>Maintain and develop ASP.NET Web Forms applications in C#.</li>
                     <li>Write back-end PL/SQL procedures.</li>
